@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Animation</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background: #000;
+    }
+    .bg {
+      height: 100vh;
+      width: 100%;
+      background-image: url(./img/bg.jpeg);
+      position: relative;
+      overflow: hidden;
+
+    }
+    .black{
+      height: 23vh;
+      width: 20vw;
+      /* border: 1px solid black; */
+      position: relative;
+      left: 100%;
+      top: 49%;
+      animation-name: fstcar;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    @keyframes fstcar {
+      from{
+        left: 100%;
+      }
+      to{
+        left: -20%;
+      }
+    }
+    .fstcar{
+      height: 20vh;
+      width: 20vw;
+      position: absolute;
+    }
+    .trone{
+      height: 11vh;
+      width: 5vw;
+      border-radius: 100px;
+      position: absolute;
+      bottom: 10px;
+      left: -5px;
+      animation-name: tr;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    @keyframes tr {
+      from{
+        transform: rotate(10deg);
+      }
+      to{
+        transform: rotate(360deg);
+      }
+    }
+    .trtwo{
+      left: 71%;
+    }
+    .green{
+      top: 200px;
+      left: 115%;
+      animation-duration: 3s;
+    }
+    .scndcar{
+      height: 45vh;
+      width: 23vw;
+      left: -20px;
+      top:-80px;
+    }
+    .trthree{
+      left: 34px;
+    }
+    .trfour{
+      left: 182px;
+    }
+    .red{
+      top: 90px;
+      left: 108%;
+      animation-duration: 4s;
+    }
+  </style>
+  <body>
+    <div class="bg">
+
+      <div class="black">
+        <img src="./img/black_car-removebg-preview.png" alt="" class="fstcar">
+        <img src="./img/tyre-removebg-preview.png" alt="" class="trone">
+        <img src="./img/tyre-removebg-preview.png" alt="" class=" trone trtwo">
+      </div>
+
+      <div class=" black green">
+        <img src="./img/red_car-removebg-preview.png" alt="" class="fstcar scndcar">
+        <img src="./img/tyre-removebg-preview.png" alt="" class="trone trthree">
+        <img src="./img/tyre-removebg-preview.png" alt="" class="trone trfour">
+      </div>
+
+      <div class=" black red">
+        <img src="./img/green_car-removebg-preview.png" alt="" class="fstcar scndcar">
+        <img src="./img/tyre-removebg-preview.png" alt="" class="trone trthree">
+        <img src="./img/tyre-removebg-preview.png" alt="" class="trone  trfour">
+      </div>
+
+    </div>
+
+  </body>
+</html>
